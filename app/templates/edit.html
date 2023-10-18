@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% blcok title %}Edit <Task>% endblock title %</Task>
+{% block content %}
+<h1>Edit Taks</h1>
+<form method="Post" action=""{{ url_for('edit_task', pk=task['id']) }}
+ <p>
+    <label for=""summary>Summary</label>
+    <input type="text" value="{{ task['summary'] }}" name="summary" id="od_summary"
+
+ </p>
+ <p>
+    <label for="description">Description</label>
+    <input
+        type="text" value="{{ task['description']}}"
+ </p>

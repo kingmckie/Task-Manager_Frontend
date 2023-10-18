@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}Error {{ err }}{% endblcok title %}
+
+{% block content %}
+<h1>Error ({{ err)}}</h1>
+{% if  err > 399 and err < 500 %}
+<p>Description: Server error.</p>
+{% endif %}
+<p>The operation you attempted failed.</p>
+<p>Please try again later and if the error persists, contact an adminstartor.</p>
+{% endblock content %}
